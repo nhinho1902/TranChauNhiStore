@@ -1,0 +1,42 @@
+<div id="<%= dom_id marketing %>">
+  <p>
+    <strong>Content:</strong>
+    <%= marketing.Content %>
+  </p>
+
+  <p>
+    <strong>Marcom id:</strong>
+    <%= marketing.Marcom_ID %>
+  </p>
+
+  <p>
+    <strong>Content name:</strong>
+    <%= marketing.Content_Name %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= marketing.Description %>
+  </p>
+
+  <p>
+    <strong>File:</strong>
+    <%= link_to marketing.File.filename, marketing.File if marketing.File.attached? %>
+  </p>
+
+  <p>
+    <strong>Social networking platform:</strong>
+    <%= marketing.Social_Networking_Platform %>
+  </p>
+
+  <p>
+    <strong>Person in charge:</strong>
+    <%= marketing.Person_in_Charge %>
+  </p>
+
+  <p>
+    <strong>Note:</strong>
+    <%= marketing.Note %>
+  </p>
+
+</div>
