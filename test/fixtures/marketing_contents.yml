@@ -1,19 +1,19 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  Content: MyString
   Marcom_ID: 1
   Content_Name: MyText
   Description: MyText
-  Social_Networking_Platform: MyString
+  Social_Networking_Platform: MyText
+  Deadline: 2023-05-26 17:55:26
   Person_in_Charge: MyText
   Note: MyText
 
 two:
-  Content: MyString
   Marcom_ID: 1
   Content_Name: MyText
   Description: MyText
-  Social_Networking_Platform: MyString
+  Social_Networking_Platform: MyText
+  Deadline: 2023-05-26 17:55:26
   Person_in_Charge: MyText
   Note: MyText

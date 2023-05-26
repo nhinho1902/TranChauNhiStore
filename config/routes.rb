@@ -1,12 +1,13 @@
 require 'sidekiq/web'
 
 Rails.application.routes.draw do
+  resources :marketing_contents
+  resources :communication_designs
   resources :human_resources
   resources :event_operations
   resources :sponsor_levels
   resources :sponsors
   resources :marketings
-  resources :communication_designs
   resources :speakers
   resources :speaking_topics
     authenticate :user, lambda { |u| u.admin? } do

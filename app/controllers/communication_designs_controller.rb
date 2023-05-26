@@ -65,6 +65,6 @@ class CommunicationDesignsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def communication_design_params
-      params.require(:communication_design).permit(:Marcom_ID, :Task_Name, :Description, :File, :Person_in_Charge, :Note)
+      params.require(:communication_design).permit(:Marcom_ID, :Task_Name, :Description, :File, :Deadline, :Person_in_Charge, :Note)
     end
 end

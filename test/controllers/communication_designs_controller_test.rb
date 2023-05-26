@@ -17,7 +17,7 @@ class CommunicationDesignsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create communication_design" do
     assert_difference("CommunicationDesign.count") do
-      post communication_designs_url, params: { communication_design: { Description: @communication_design.Description, Marcom_ID: @communication_design.Marcom_ID, Note: @communication_design.Note, Person_in_Charge: @communication_design.Person_in_Charge, Task_Name: @communication_design.Task_Name } }
+      post communication_designs_url, params: { communication_design: { Deadline: @communication_design.Deadline, Description: @communication_design.Description, Marcom_ID: @communication_design.Marcom_ID, Note: @communication_design.Note, Person_in_Charge: @communication_design.Person_in_Charge, Task_Name: @communication_design.Task_Name } }
     end
 
     assert_redirected_to communication_design_url(CommunicationDesign.last)
@@ -34,7 +34,7 @@ class CommunicationDesignsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update communication_design" do
-    patch communication_design_url(@communication_design), params: { communication_design: { Description: @communication_design.Description, Marcom_ID: @communication_design.Marcom_ID, Note: @communication_design.Note, Person_in_Charge: @communication_design.Person_in_Charge, Task_Name: @communication_design.Task_Name } }
+    patch communication_design_url(@communication_design), params: { communication_design: { Deadline: @communication_design.Deadline, Description: @communication_design.Description, Marcom_ID: @communication_design.Marcom_ID, Note: @communication_design.Note, Person_in_Charge: @communication_design.Person_in_Charge, Task_Name: @communication_design.Task_Name } }
     assert_redirected_to communication_design_url(@communication_design)
   end
 

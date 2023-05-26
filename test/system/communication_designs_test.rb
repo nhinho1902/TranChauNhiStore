@@ -14,6 +14,7 @@ class CommunicationDesignsTest < ApplicationSystemTestCase
     visit communication_designs_url
     click_on "New communication design"
 
+    fill_in "Deadline", with: @communication_design.Deadline
     fill_in "Description", with: @communication_design.Description
     fill_in "Marcom id", with: @communication_design.Marcom_ID
     fill_in "Note", with: @communication_design.Note
@@ -29,6 +30,7 @@ class CommunicationDesignsTest < ApplicationSystemTestCase
     visit communication_design_url(@communication_design)
     click_on "Edit this communication design", match: :first
 
+    fill_in "Deadline", with: @communication_design.Deadline
     fill_in "Description", with: @communication_design.Description
     fill_in "Marcom id", with: @communication_design.Marcom_ID
     fill_in "Note", with: @communication_design.Note

@@ -4,6 +4,7 @@ class CreateCommunicationDesigns < ActiveRecord::Migration[7.0]
       t.integer :Marcom_ID
       t.text :Task_Name
       t.text :Description
+      t.datetime :Deadline
       t.text :Person_in_Charge
       t.text :Note
 
